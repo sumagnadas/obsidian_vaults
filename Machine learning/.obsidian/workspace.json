@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Supervised Machine Learning/Regression/Simple Linear Regression.md",
+                "file": "Supervised Machine Learning/Classification/Classification.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Simple Linear Regression"
+              "title": "Classification"
             }
           }
         ]
@@ -174,26 +174,27 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
-      "syncthing-integration:Open Syncthing conflict manager modal": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "fit:Fit Sync": false,
-      "github-gitless-sync:Open sync conflicts view": false,
-      "github-gitless-sync:Sync with GitHub": false
+      "command-palette:Open command palette": false
     }
   },
   "active": "cf14bf3483140481",
   "lastOpenFiles": [
+    "Supervised Machine Learning/Classification/Classification.md",
+    "Supervised Machine Learning/Regression/Regression.md",
     "Supervised Machine Learning/Regression/Simple Linear Regression.md",
+    "Data point line.png",
+    "b derivation.png",
+    "m derivation.png",
+    "Unsupervised Machine Learning/Anomaly Detection/Anomaly Detection.md",
+    "Supervised Machine Learning/Supervised Machine Learning.md",
+    "Types of Machine Learning.md",
     "Untitled.md",
     "Unsupervised Machine Learning/Unsupervised Machine Learning.md",
-    "Supervised Machine Learning/Regression/Regression.md",
-    "Types of Machine Learning.md",
     "Semi-supervised Machine Learning/Semi-supervised Machine Learning.md",
     "Semi-supervised Machine Learning",
     "Reinforcement Learning/Reinforcement Learning.md",
@@ -203,9 +204,6 @@
     "Unsupervised Machine Learning/Anomaly Detection",
     "Untitled",
     "Unsupervised Machine Learning/Clustering",
-    "Supervised Machine Learning/Supervised Machine Learning.md",
-    "Unsupervised Machine Learning/Anomaly Detection/Anomaly Detection.md",
-    "Supervised Machine Learning/Classification/Classification.md",
     "Supervised Machine Learning/Classification",
     "Welcome.md",
     "Supervised Machine Learning/Regression",
@@ -223,7 +221,6 @@
     "Unsupervised  Machine Learning.md",
     "Regression.md",
     "Semi-supervised Machine Learning.md",
-    "New file.md",
-    "hello.md"
+    "New file.md"
   ]
 }

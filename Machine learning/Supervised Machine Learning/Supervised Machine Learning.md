@@ -3,4 +3,3 @@ In supervised machine learning, We mostly train with datasets which already have
 There are basically two types of Supervised Machine Learning(as far as my knowledge goes right now) :-
 - [[Regression|Regression]] -> Predict numerical data (how much Package they will get)
 - [[Classification]] -> Predict categorical data (whether they will get placed or not)
-- 
