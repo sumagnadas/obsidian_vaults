@@ -14,12 +14,12 @@ Here $m$ can be taken as weightage of the variable i.e. how much the package dep
 ## Mathematical formulation
 ---
 We have to find the $m$ and $b$ for the best fit line using mathematical operations on a data
-- **[[#^f9a0c4|Closed Form Expression]]** -> Basically a mathematical equation expressed using known operators and functions but no limit, differentiation or integration. Eg. *OLS* -> Mostly used for 1D data?
+- **[[#Closed Form Expression|Closed Form Expression]]** -> Basically a mathematical equation expressed using known operators and functions but no limit, differentiation or integration. Eg. *OLS* -> Mostly used for 1D data?
 	- $b=\bar{y}-m\bar{x}$
 	- $m=\frac{\sum_{i=1}^n {(x_i-\bar{x_i})(y_i-\bar{y_i})}}{\sum_{i=1}^n {(x_i-\bar{x_i})^2}}$ where $\bar{x},\bar{y}$ are both means of $x$ and $y$ variable.
-- **[[#^ba9265|Non-closed Form Expression]]** -> Approximate the $m$ and $b$ using some method. Eg. Gradient Descent -> Mostly used for higher dimensional data
+- **[[#Non-closed Form Expression|Non-closed Form Expression]]** -> Approximate the $m$ and $b$ using some method. Eg. Gradient Descent -> Mostly used for higher dimensional data
 
-**Closed Form Expression** ^f9a0c4
+#### Closed Form Expression
 ***
 Let $d_1,d_2,...,d_n$ be the difference of the actual values from the line we are choosing to represent the linear relation between the variables. We need to minimize all the $d_j$, $j=1,2,...,n$ as much as possible for it to be the best fit line for the linear model.
 
@@ -38,9 +38,12 @@ Derivation for $b$ ->
 We get, $b=\bar{y} - m\bar{x}$
 Derivation for $m$ ->
 ![[m derivation.png]]
-We get, $m=\frac{\sum_{i=1}^n {(x_i-\bar{x_i})(y_i-\bar{y_i})}}{\sum_{i=1}^n {(x_i-\bar{x_i})^2}}$ 
+We get,
+$$
+m=\frac{ \sum_{i=1}^n {(x_i-\bar{x_i})(y_i-\bar{y_i})}}{\sum_{i=1}^n {(x_i-\bar{x_i})^2}}
+$$
 
-Non-closed Form Expression ^ba9265
+#### Non-closed Form Expression
 ***
 We use gradient descent for this to approximate the values of the variables in the loss function for which it achieves minima. It is basically an algorithm which takes iterative steps to go to the local minimum of the loss function using the gradient of the function. This is mostly useful for higher dimension data where calculating the values using the closed form expression will be computationally heavy and inefficient.
 

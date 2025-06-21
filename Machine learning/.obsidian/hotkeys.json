@@ -58,15 +58,6 @@
       "key": "ArrowDown"
     }
   ],
-  "editor:toggle-inline-math": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "4"
-    }
-  ],
   "graph:open-local": [
     {
       "modifiers": [
@@ -116,6 +107,24 @@
         "Alt"
       ],
       "key": "ArrowRight"
+    }
+  ],
+  "editor:toggle-inline-math": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "4"
+    }
+  ],
+  "editor:insert-mathblock": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "4"
     }
   ]
 }

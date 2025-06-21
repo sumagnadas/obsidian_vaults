@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "67458a8d4b6b492b",
+        "id": "952c3a40a19ffd73",
         "type": "tabs",
         "children": [
           {
-            "id": "ecce095cea00ab3d",
+            "id": "8aefca06ba060f37",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "id": "b9d963d4f8f925ba",
+        "id": "eed3e341f981a52d",
         "type": "tabs",
         "children": [
           {
-            "id": "cf14bf3483140481",
+            "id": "71826ef609a5f017",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -94,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "30312b1ff59806c1",
@@ -110,7 +111,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Supervised Machine Learning/Regression/Simple Linear Regression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Simple Linear Regression"
+              "title": "Backlinks"
             }
           },
           {
@@ -182,14 +182,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cf14bf3483140481",
+  "active": "71826ef609a5f017",
   "lastOpenFiles": [
     "Supervised Machine Learning/Classification/Classification.md",
-    "Supervised Machine Learning/Regression/Regression.md",
+    "Supervised Machine Learning/Regression/Logistic Regression.md",
     "Supervised Machine Learning/Regression/Simple Linear Regression.md",
+    "Pasted image 20250620191822.png",
+    "Pasted image 20250620181950.png",
+    "Pasted image 20250620181854.png",
+    "Pasted image 20250619211200.png",
+    "Pasted image 20250619210520.png",
+    "Pasted image 20250619184952.png",
+    "Pasted image 20250619184820.png",
+    "Pasted image 20250619032140.png",
+    "Supervised Machine Learning/Regression/Regression.md",
     "Data point line.png",
     "b derivation.png",
-    "m derivation.png",
     "Unsupervised Machine Learning/Anomaly Detection/Anomaly Detection.md",
     "Supervised Machine Learning/Supervised Machine Learning.md",
     "Types of Machine Learning.md",
@@ -220,7 +228,6 @@
     "Unsupervised  Machine Learning/Dimensionality Reduction.md",
     "Unsupervised  Machine Learning.md",
     "Regression.md",
-    "Semi-supervised Machine Learning.md",
-    "New file.md"
+    "Semi-supervised Machine Learning.md"
   ]
 }

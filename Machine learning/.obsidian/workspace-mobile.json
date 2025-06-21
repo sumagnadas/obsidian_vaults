@@ -11,10 +11,14 @@
             "id": "9bbb5b1e6b23de8e",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Types of Machine Learning.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Types of Machine Learning"
             },
             "group": "28bdaf9b170a8f09"
           },
@@ -40,12 +44,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Supervised Machine Learning/Regression/Simple Linear Regression.md",
+                "file": "Types of Machine Learning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Simple Linear Regression"
+              "title": "Types of Machine Learning"
             },
             "group": "28bdaf9b170a8f09"
           }
