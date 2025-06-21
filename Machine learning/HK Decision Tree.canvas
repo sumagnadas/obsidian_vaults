@@ -1,0 +1,32 @@
+{
+	"nodes":[
+		{"id":"da490b25c55d7086","type":"text","text":"Loves Metroidvanias","x":-125,"y":-30,"width":250,"height":60,"color":"5"},
+		{"id":"04be03e65765ecb8","type":"text","text":"Loves Hollow Knight","x":-340,"y":180,"width":250,"height":60,"color":"5"},
+		{"id":"91710d8fdbc1a46d","type":"text","text":"Loves Hollow Knight","x":56,"y":170,"width":250,"height":60,"color":"5"},
+		{"id":"f6bcaee5c376aa90","type":"text","text":"1","x":260,"y":320,"width":53,"height":50,"color":"4"},
+		{"id":"2680a4d4d78ab1f1","type":"text","text":"3","x":56,"y":320,"width":50,"height":50,"color":"4"},
+		{"id":"91e4253970bafcd8","type":"text","text":"0","x":-143,"y":325,"width":53,"height":50,"color":"4"},
+		{"id":"0b6bfdb4f5424e86","type":"text","text":"4","x":-340,"y":325,"width":50,"height":50,"color":"4"},
+		{"id":"4c10c331262e4f01","type":"text","text":"2","x":960,"y":310,"width":53,"height":50,"color":"4"},
+		{"id":"3f539c8fbaa23978","type":"text","text":"1","x":756,"y":310,"width":50,"height":50,"color":"4"},
+		{"id":"54fe7abda0c10483","type":"text","text":"2","x":557,"y":315,"width":53,"height":50,"color":"4"},
+		{"id":"ea92f3701f49430f","type":"text","text":"3","x":360,"y":315,"width":50,"height":50,"color":"4"},
+		{"id":"3bfaae836b43e158","type":"text","text":"Loves Platforming games","x":575,"y":-40,"width":250,"height":60,"color":"5"},
+		{"id":"a405f29f32cbb551","type":"text","text":"Loves Hollow Knight","x":360,"y":170,"width":250,"height":60,"color":"5"},
+		{"id":"bd14b2ef42f6aef8","type":"text","text":"Loves Hollow Knight","x":756,"y":160,"width":250,"height":60,"color":"5"}
+	],
+	"edges":[
+		{"id":"cb66e16602593a28","fromNode":"da490b25c55d7086","fromSide":"bottom","toNode":"04be03e65765ecb8","toSide":"top","color":"#ffffff","label":"True"},
+		{"id":"89ac3505ffab6ee4","fromNode":"da490b25c55d7086","fromSide":"bottom","toNode":"91710d8fdbc1a46d","toSide":"top","color":"#ffffff","label":"False"},
+		{"id":"3ff794acbd611f36","fromNode":"91710d8fdbc1a46d","fromSide":"bottom","toNode":"f6bcaee5c376aa90","toSide":"top","color":"#ffffff","label":"False"},
+		{"id":"f5b6e257a05a587f","fromNode":"91710d8fdbc1a46d","fromSide":"bottom","toNode":"2680a4d4d78ab1f1","toSide":"top","color":"#ffffff","label":"True"},
+		{"id":"d401b563fa4810d6","fromNode":"04be03e65765ecb8","fromSide":"bottom","toNode":"0b6bfdb4f5424e86","toSide":"top","color":"#ffffff","label":"True"},
+		{"id":"a2e552a45441b971","fromNode":"04be03e65765ecb8","fromSide":"bottom","toNode":"91e4253970bafcd8","toSide":"top","color":"#ffffff","label":"False"},
+		{"id":"5b56ef7d0d3abf9e","fromNode":"3bfaae836b43e158","fromSide":"bottom","toNode":"a405f29f32cbb551","toSide":"top","color":"#ffffff","label":"True"},
+		{"id":"092d08e1209943d3","fromNode":"3bfaae836b43e158","fromSide":"bottom","toNode":"bd14b2ef42f6aef8","toSide":"top","color":"#ffffff","label":"False"},
+		{"id":"3f00f63595b5e7f2","fromNode":"a405f29f32cbb551","fromSide":"bottom","toNode":"ea92f3701f49430f","toSide":"top","color":"#ffffff","label":"True"},
+		{"id":"ecc6ffef3de6f626","fromNode":"a405f29f32cbb551","fromSide":"bottom","toNode":"54fe7abda0c10483","toSide":"top","color":"#ffffff","label":"False"},
+		{"id":"7d9f51174a970789","fromNode":"bd14b2ef42f6aef8","fromSide":"bottom","toNode":"4c10c331262e4f01","toSide":"top","color":"#ffffff","label":"False"},
+		{"id":"17ff192051adcd2d","fromNode":"bd14b2ef42f6aef8","fromSide":"bottom","toNode":"3f539c8fbaa23978","toSide":"top","color":"#ffffff","label":"True"}
+	]
+}

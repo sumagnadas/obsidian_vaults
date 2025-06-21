@@ -1,5 +1,5 @@
 There are many types of Regression and these are as follows(for now) -> 
-- **Linear**
+- **[[#Linear Regression|Linear]]**
 - **Polynomial**
 - **[[Logistic Regression|Logistic]]** 
 # Linear Regression
