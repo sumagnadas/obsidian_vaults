@@ -3,6 +3,10 @@ This is a decision tree. As you can see, its basically a lot of if-else statemen
 Also, the first node is known as root node(top blue). The ones which have arrows going both in and out of them are known as branches (blue other than the top one) and the ones which have arrows only going into them are known as leaves (green)
 ## Coding Aspect
 ---
+- `sklearn`
+	- `preprocessing.LabelEncoder` -> encode all the label categories to numerical categories
+	- `tree.DecisionTreeClassifier` -> Make a decision tree model based on a dataset
+		- `score` -> function to see how good it predicted for a test dataset (probably present in every models' class)
 ## Mathematical Aspect
 ---
 Although this looks like many if-else statements, the way we order the if-else is very important. If we choose it right, we can optimize the categorization at the top before it goes down very deep. The way we choose the ordering is by seeing how impure the leaves are from each if-else.
