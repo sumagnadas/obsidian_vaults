@@ -1,4 +1,13 @@
 Decision trees, although ideal for machine learning models, tend to overfit on the training data as the ordering of the conditions matter a lot when categorizing a data. Hence, to make it work better, the Random Forest algorithm was made.
+## Coding Aspect
+---
+- `sklearn`
+	- `datasets.load_digits` -> Used to get the digits dataset for training a model
+	- `ensemble`-> Used to create models combining the prediction of multiple smaller models which are not very powerful on their own.
+		- `RandomForestClassifier` -> Class for creating a random forest model
+- `matplotlib.pyplot`
+	- `gray` -> change the colormap to gray
+	- `matshow` -> Used to show a 2D array as a heatmap
 ## Algorithm for building and using a Random Forest model
 ---
 1. First create a bootstrapped dataset of the same size with the original training dataset i.e. sample random points from the original dataset taking duplicates until the dataset is of the same dimensions as the original one.

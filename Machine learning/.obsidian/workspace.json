@@ -184,9 +184,11 @@
   },
   "active": "71826ef609a5f017",
   "lastOpenFiles": [
-    "Supervised Machine Learning/Classification/Decision Tree.md",
-    "Supervised Machine Learning/Classification/Random Forest.md",
+    "Supervised Machine Learning/Classification/K Nearest Neighbors.md",
+    "Pasted image 20250625192825.png",
     "Supervised Machine Learning/Classification/Classification.md",
+    "Supervised Machine Learning/Classification/Random Forest.md",
+    "Supervised Machine Learning/Classification/Decision Tree.md",
     "Types of Machine Learning.md",
     "Supervised Machine Learning/Supervised Machine Learning.md",
     "Supervised Machine Learning/Regression/Regression.md",
@@ -202,7 +204,6 @@
     "Pasted image 20250619210520.png",
     "Pasted image 20250619184952.png",
     "Pasted image 20250619184820.png",
-    "Pasted image 20250619032140.png",
     "Unsupervised Machine Learning/Anomaly Detection/Anomaly Detection.md",
     "Untitled.md",
     "Unsupervised Machine Learning/Unsupervised Machine Learning.md",
@@ -228,8 +229,6 @@
     "Reinforcement Learning.md",
     "Supervised Machine Learning.md",
     "Unsupervised Machine Learning/Dimensionality Reduction/Dimensionality Reduction.md",
-    "Unsupervised  Machine Learning/Dimensionality Reduction.md",
-    "Unsupervised  Machine Learning.md",
-    "Regression.md"
+    "Unsupervised  Machine Learning/Dimensionality Reduction.md"
   ]
 }
