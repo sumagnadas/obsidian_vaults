@@ -1,0 +1,1 @@
+A data structure containing elements of same data type at contiguous memory locations. It is the most simple data structure.

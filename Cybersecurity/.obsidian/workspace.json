@@ -1,34 +1,63 @@
 {
   "main": {
-    "id": "e93b0e0214692a4c",
+    "id": "8d50552404a7ed2e",
     "type": "split",
     "children": [
       {
-        "id": "952c3a40a19ffd73",
+        "id": "8273c1d26f41190e",
         "type": "tabs",
         "children": [
           {
-            "id": "8aefca06ba060f37",
+            "id": "5dccb5914054ed38",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Supervised Machine Learning/Classification/Random Forest.md",
+                "file": "Networking/Networking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Random Forest"
+              "title": "Networking"
+            }
+          },
+          {
+            "id": "3ebfbc90abb53b4e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cybersecurity Vault.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cybersecurity Vault"
+            }
+          },
+          {
+            "id": "ee5c1ff2e283a912",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation Lab/Android Phone -> Makeshift Wi-Fi Router (for fun).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Android Phone -> Makeshift Wi-Fi Router (for fun)"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
-        "id": "eed3e341f981a52d",
+        "id": "4520771f67a50cc0",
         "type": "tabs",
         "children": [
           {
-            "id": "71826ef609a5f017",
+            "id": "6888849ec6cb26ba",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -43,15 +72,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "4d96e91adf88d98a",
+    "id": "9bc2a0579c69de9b",
     "type": "split",
     "children": [
       {
-        "id": "2cef7b1d53ecc313",
+        "id": "3dc01ec01f7b078a",
         "type": "tabs",
         "children": [
           {
-            "id": "306beedec5407efa",
+            "id": "66aa21c1925d57b6",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -64,7 +93,7 @@
             }
           },
           {
-            "id": "7151aede6e08930c",
+            "id": "0ee6bde10868efed",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -81,7 +110,7 @@
             }
           },
           {
-            "id": "72555a492139b625",
+            "id": "aa3f376b296f870e",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -94,22 +123,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
-    "id": "30312b1ff59806c1",
+    "id": "a6e6b96510bec55e",
     "type": "split",
     "children": [
       {
-        "id": "201f3daa3a6cf73d",
+        "id": "9fb43030bc0c5b6b",
         "type": "tabs",
         "children": [
           {
-            "id": "f3312fb76b7a179e",
+            "id": "a174b0dabc23fb6d",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Networking/Networking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,24 +150,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Networking"
             }
           },
           {
-            "id": "c9b73e0395a80f68",
+            "id": "f2c84074afddf439",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Networking/Networking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Networking"
             }
           },
           {
-            "id": "a40361caa13d1104",
+            "id": "b4a02a4f13a77d8a",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -151,17 +183,18 @@
             }
           },
           {
-            "id": "7230d13e9a08b854",
+            "id": "39865f20a3747303",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "Networking/Networking.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Networking"
             }
           }
         ]
@@ -181,53 +214,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "71826ef609a5f017",
+  "active": "6888849ec6cb26ba",
   "lastOpenFiles": [
-    "Supervised Machine Learning/Supervised Machine Learning.md",
-    "Supervised Machine Learning/Classification/Classification.md",
-    "Supervised Machine Learning/Classification/Decision Tree.md",
-    "Supervised Machine Learning/Classification/Random Forest.md",
-    "Supervised Machine Learning/Regression/Logistic Regression.md",
-    "Types of Machine Learning.md",
-    "Supervised Machine Learning/Classification/K Nearest Neighbors.md",
-    "Pasted image 20250625192825.png",
-    "Supervised Machine Learning/Regression/Regression.md",
-    "Supervised Machine Learning/Regression/Simple Linear Regression.md",
-    "HK Decision Tree.canvas",
-    "Pasted image 20250622013803.png",
-    "Pasted image 20250621140839.png",
-    "Pasted image 20250620191822.png",
-    "Pasted image 20250620181950.png",
-    "Pasted image 20250620181854.png",
-    "Pasted image 20250619211200.png",
-    "Pasted image 20250619210520.png",
-    "Pasted image 20250619184952.png",
-    "Pasted image 20250619184820.png",
-    "Unsupervised Machine Learning/Anomaly Detection/Anomaly Detection.md",
-    "Untitled.md",
-    "Unsupervised Machine Learning/Unsupervised Machine Learning.md",
-    "Semi-supervised Machine Learning/Semi-supervised Machine Learning.md",
-    "Semi-supervised Machine Learning",
-    "Reinforcement Learning/Reinforcement Learning.md",
-    "Reinforcement Learning",
-    "Unsupervised Machine Learning/Dimensionality Reduction",
-    "Unsupervised Machine Learning/Association Rule Learning",
-    "Unsupervised Machine Learning/Anomaly Detection",
-    "Untitled",
-    "Unsupervised Machine Learning/Clustering",
-    "Supervised Machine Learning/Classification",
-    "Welcome.md",
-    "Supervised Machine Learning/Regression",
-    "Regression/Simple Linear Regression.md",
-    "Regression",
-    "Supervised Machine Learning/Classification.md",
-    "Unsupervised Machine Learning/Association Rule Learning/Association Rule Learning.md",
-    "Unsupervised Maching Learning/Anomaly Detection.md",
-    "Unsupervised Machine Learning/Clustering/Clustering.md",
-    "Unsupervised Machine Learning.md",
-    "Reinforcement Learning.md",
-    "Supervised Machine Learning.md",
-    "Unsupervised Machine Learning/Dimensionality Reduction/Dimensionality Reduction.md",
-    "Unsupervised  Machine Learning/Dimensionality Reduction.md"
+    "Exploitation Lab/Android Phone -> Makeshift Wi-Fi Router (for fun).md",
+    "Exploitation Lab/Exploitation Lab.md",
+    "Cybersecurity Vault.md",
+    "Exploitation Lab",
+    "Networking/Networking.md",
+    "Networking/Application Layer",
+    "Networking/Application Layer/TCP-IP Stack Deep Dive.md",
+    "Tools and Commands/Tools and Commands.md",
+    "Tools and Commands/Wireshark.md",
+    "Tools and Commands",
+    "Networking",
+    "Untitled 1.md"
   ]
 }
