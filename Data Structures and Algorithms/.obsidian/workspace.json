@@ -96,8 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "eb662e538ea745e1",
@@ -179,6 +178,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -189,8 +189,8 @@
   },
   "active": "f0f523be6fe7569a",
   "lastOpenFiles": [
-    "Pasted image 20250730212110.png",
     "Data Structures/Hash Table.md",
+    "Pasted image 20250730212110.png",
     "Data Structures/Linked List.md",
     "Data Structures/Array.md",
     "Algorithms/Algorithms.md",

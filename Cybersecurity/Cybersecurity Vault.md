@@ -18,11 +18,14 @@ This vault includes notes on topics like **Operating Systems**, **Networking**, 
 ---
 ## 🗂️ Vault Structure (Sample)
 Cybersecurity/  
+├── [[Introduction]]
 ├── [[Operating Systems]]
 ├── [[Networking]]
 ├── [[Web Security]]
 ├── [[Exploitation Lab]]
 ├── [[Tools and Commands]]
+├── [[Computer Architecture]]
+├── [[Assembly]]
 └── [[Cybersecurity Vault]]
 ## 🧭 Navigation Tips
 

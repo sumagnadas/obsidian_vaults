@@ -6,67 +6,81 @@
       {
         "id": "8273c1d26f41190e",
         "type": "tabs",
+        "dimension": 54.2225201072386,
         "children": [
           {
-            "id": "5dccb5914054ed38",
+            "id": "f3455934522d0c4e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/Networking.md",
+                "file": "Tools and Commands/GDB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Networking"
+              "title": "GDB"
             }
           },
           {
-            "id": "3ebfbc90abb53b4e",
+            "id": "06c825a8f093cad4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cybersecurity Vault.md",
+                "file": "Assembly/Assembly.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cybersecurity Vault"
-            }
-          },
-          {
-            "id": "ee5c1ff2e283a912",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation Lab/Android Phone -> Makeshift Wi-Fi Router (for fun).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Android Phone -> Makeshift Wi-Fi Router (for fun)"
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "4520771f67a50cc0",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6888849ec6cb26ba",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Assembly"
             }
           }
         ]
+      },
+      {
+        "id": "9480d95ce826fac1",
+        "type": "split",
+        "dimension": 45.7774798927614,
+        "children": [
+          {
+            "id": "4520771f67a50cc0",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "1e8cc10be17c2286",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Assembly/System calls.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "System calls"
+                }
+              }
+            ]
+          },
+          {
+            "id": "f5fdcede3f924a86",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "6888849ec6cb26ba",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {},
+                  "icon": "lucide-git-fork",
+                  "title": "Graph view"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -98,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "stack",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -140,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networking/Networking.md",
+                "file": "Tools and Commands/GDB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +164,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Networking"
+              "title": "Backlinks for GDB"
             }
           },
           {
@@ -206,6 +220,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -216,15 +231,31 @@
   },
   "active": "6888849ec6cb26ba",
   "lastOpenFiles": [
-    "Exploitation Lab/Android Phone -> Makeshift Wi-Fi Router (for fun).md",
-    "Exploitation Lab/Exploitation Lab.md",
+    "Assembly/System calls.md",
+    "Tools and Commands/GDB.md",
+    "Tools and Commands/Tools and Commands.md",
+    "Assembly/Assembly.md",
+    "Assembly/Instructions.md",
+    "Introduction.md",
     "Cybersecurity Vault.md",
-    "Exploitation Lab",
+    "Operating Systems/Operating Systems.md",
+    "Computer Architecture/Computer Architecture.md",
+    "System Calls.md",
+    "Untitled 1.base",
+    "Untitled.base",
+    "Web Security.md",
+    "Tools and Commands/Wireshark.md",
+    "Pasted image 20251210020548.png",
+    "Pasted image 20251210011823.png",
+    "Assembly",
+    "Computer Architecture",
+    "Exploitation Lab/Android Phone -> Makeshift Wi-Fi Router (for fun).md",
+    "Operating Systems",
     "Networking/Networking.md",
+    "Exploitation Lab/Exploitation Lab.md",
+    "Exploitation Lab",
     "Networking/Application Layer",
     "Networking/Application Layer/TCP-IP Stack Deep Dive.md",
-    "Tools and Commands/Tools and Commands.md",
-    "Tools and Commands/Wireshark.md",
     "Tools and Commands",
     "Networking",
     "Untitled 1.md"
