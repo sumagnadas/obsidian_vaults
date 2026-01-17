@@ -11,7 +11,8 @@
 - **Transmission Rate** -> measures the data speed in data bits/second.
 - **Packets** -> Packets are packages of data transmitted in a network. 
 - **Packet switches** -> A device which receives packets of data from an incoming communication link and forwards it via an outgoing link. (similar to a transport network)
-- **Route/Path** -> The path through which a packet traverses via packet switches before reaching the 
+- **Route/Path** -> The path through which a packet traverses via packet switches before reaching the destination.
+- **Sockets** -> (Basic idea) File-like concept meant to represent the link between two endpoints over a network.
 ## Introduction
 ---
 In today's world, Internet (from the word *Inter-Networking*) has become an indispensable part of our life. It is a network where many networks consisting of end systems are connected together via communication links and packet switches. Different types of communication links transfer data at different transmission rates depending on the medium and radio spectrum. End systems access the internet through Internet Service Providers(ISPs). There are also different protocols in place governing how transmission of data occurs. 

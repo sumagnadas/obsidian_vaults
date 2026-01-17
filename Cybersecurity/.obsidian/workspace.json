@@ -6,24 +6,24 @@
       {
         "id": "8273c1d26f41190e",
         "type": "tabs",
-        "dimension": 54.2225201072386,
+        "dimension": 54.222520107238594,
         "children": [
           {
-            "id": "f3455934522d0c4e",
+            "id": "06c825a8f093cad4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools and Commands/GDB.md",
+                "file": "Assembly/Instructions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GDB"
+              "title": "Instructions"
             }
           },
           {
-            "id": "06c825a8f093cad4",
+            "id": "9b8d3b3c41de32da",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -35,52 +35,53 @@
               "icon": "lucide-file",
               "title": "Assembly"
             }
+          },
+          {
+            "id": "3779605fe7005b72",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Assembly/Web Server.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Web Server"
+            }
           }
         ]
       },
       {
-        "id": "9480d95ce826fac1",
-        "type": "split",
-        "dimension": 45.7774798927614,
+        "id": "4520771f67a50cc0",
+        "type": "tabs",
+        "dimension": 45.777479892761406,
         "children": [
           {
-            "id": "4520771f67a50cc0",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "1e8cc10be17c2286",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Assembly/System calls.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "System calls"
-                }
-              }
-            ]
+            "id": "1e8cc10be17c2286",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Assembly/System calls.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "System calls"
+            }
           },
           {
-            "id": "f5fdcede3f924a86",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "6888849ec6cb26ba",
-                "type": "leaf",
-                "state": {
-                  "type": "graph",
-                  "state": {},
-                  "icon": "lucide-git-fork",
-                  "title": "Graph view"
-                }
-              }
-            ]
+            "id": "6888849ec6cb26ba",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -112,7 +113,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "stack",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -133,12 +134,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a6e6b96510bec55e",
@@ -229,20 +230,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6888849ec6cb26ba",
+  "active": "06c825a8f093cad4",
   "lastOpenFiles": [
-    "Assembly/System calls.md",
-    "Tools and Commands/GDB.md",
-    "Tools and Commands/Tools and Commands.md",
     "Assembly/Assembly.md",
     "Assembly/Instructions.md",
-    "Introduction.md",
-    "Cybersecurity Vault.md",
-    "Operating Systems/Operating Systems.md",
+    "Assembly/System calls.md",
+    "Assembly/Web Server.md",
+    "Tools and Commands/GDB.md",
     "Computer Architecture/Computer Architecture.md",
+    "Networking/Networking.md",
+    "Pasted image 20260116112601.png",
+    "Operating Systems/Operating Systems.md",
+    "Pasted image 20260116111207.png",
+    "Introduction.md",
+    "Tools and Commands/Tools and Commands.md",
+    "Untitled.base",
+    "Cybersecurity Vault.md",
     "System Calls.md",
     "Untitled 1.base",
-    "Untitled.base",
     "Web Security.md",
     "Tools and Commands/Wireshark.md",
     "Pasted image 20251210020548.png",
@@ -251,7 +256,6 @@
     "Computer Architecture",
     "Exploitation Lab/Android Phone -> Makeshift Wi-Fi Router (for fun).md",
     "Operating Systems",
-    "Networking/Networking.md",
     "Exploitation Lab/Exploitation Lab.md",
     "Exploitation Lab",
     "Networking/Application Layer",

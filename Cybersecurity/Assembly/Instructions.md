@@ -342,3 +342,62 @@ syscall
 - code => 2
 - Read file `pathname` wrt to `flags`
 - Returns the new file descriptor
+#### socket(int domain, int type, int protocol)
+```assembly
+mov rdi, 2 # 2 for AF_INET
+mov rsi, 1 # 1 for SOCK_STREAM, 2 for SOCK_DGRAM
+mov rdx, 0 # 0 for IPPROTO_IP
+mov rax, 41
+syscall
+```
+- code => 41
+- Creates a socket to communicate via the network mentioned by `domain`, following the protocol mentioned by `protocol`.
+- Returns a new file descriptor to use with `bind` and `accept`
+- Possible values for type starts with `SOCK_` and that of domain starts with `AF_`.
+#### bind(int fd, struct sockaddr \*addr, socklen_t addrlen)
+```assembly
+mov rdi, 3 # Assuming the FD returned by socket is 3
+mov rsi, [rdx] # Assuming rdx stores the address of the sockaddr object
+mov rdx, 16 # sockaddr object len for IPv4 is 16 (might not be the correct thing)
+mov rax, 49
+syscall
+```
+- code => 49
+- Binds the socket defined by the `fd` to an actual connection defined as per the  `sockaddr` object whose length is `addrlen`
+- The `sockaddr` has a general form of 
+  ```c
+	struct sockaddr{
+		uint16_t sa_family;
+		uint8_t sa_data[14]
+	}
+	```
+  This struct passes the data for the socket to `bind` to an actual network interface. For `sa_family=AF_INET` i.e.  IPv4, the struct is packed in the form of
+  ```c
+  struct sockaddr_in{
+	  uint16_t sin_family;
+	  uint16_t sin_port;
+	  uint32_t sin_addr;
+	  uint8_t __pad[8];
+  }
+  ```
+- Although the first argument is passed as-is via `mov`, the `sockaddr` object has to be passed minding the fact that normally storing values in the memory writes them in little-endian order but network interfaces read in big-endian order.
+#### listen(int fd, int backlog)
+```assembly
+mov rdi, 3 # Assuming the FD returned by socket is 3
+mov rsi, 0 # maximum number of queued connections at a time
+mov rax, 50
+syscall
+```
+- code => 50
+- Marks the socket as ready for `listen`-ing and accepting incoming connections at this address of the network interface for the device. `backlog` sets the maximum number of queued connections at a time.
+#### accept(int fd, struct sockaddr \*addr, socklen_t \*addrlen)
+```assembly
+mov rdi, 3 # Assuming the FD returned by socket is 3
+mov rsi, 0 # Currently moving nullptr as per first encounter with this syscall 
+mov rdx, 0 # Currently moving nullptr as per first encounter with this syscall
+mov rax, 43
+syscall
+```
+- code => 43
+- Accepts the first incoming connection in the connection queue for the socket pointed to by the `fd`.
+- Returns a new FD for the connection.

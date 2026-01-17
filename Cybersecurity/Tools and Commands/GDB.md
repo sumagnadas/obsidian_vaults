@@ -35,6 +35,11 @@ Gives info about stuff
 ### del
 Deletes stuff (?)
 - `break <id>`=> deletes the breakpoint with 
+### set
+Used to set value of a variable or declare a new one. Can be used to set value to memory locations via casting to `(unsigned long long *)` or to registers and so on after that.
+- `set $var = 1234` => creates a new variable
+- `set $rax = 0x23` => set a value to `rax` register.
+- `set *(unsigned long long*)($rbp-0x8)=0x00007ffd65db13b0` => setting to a memory location pointed to by `[rbp-0x8]`
 ## Scripting
 ---
 ### commands

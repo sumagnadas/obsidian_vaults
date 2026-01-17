@@ -38,7 +38,7 @@ _start:
 Multi-byte primitives have their own format when stored in memory. The formats mostly tell us about how individual bytes are laid out in memory. It can be stored in big endian or little endian format.
 #### Big Endian
 This is how we see when we think about bytes being laid out. This is also how the data is stored in registers.
-Imagine the data is `0x1f2e3d4c`. It will be stored in memory as
+Imagine the data is `0x1f2e3d4c`. It will be stored in registers as
 
 | b0  | b1  | b2  | b4  |
 | --- | --- | --- | --- |
@@ -53,3 +53,6 @@ Imagine the data is `0x1f2e3d4c`. It will be stored in memory as
 | 4c  | 3d  | 2e  | 1f  |
 Endianness doesn't matter when we are working with what the CPU handles but when we have to interact with systems having data with different endianness, we have to convert the data to what CPU can handle and then work with it.
 For example, if your CPU is little-endian and you have to interact with network protocols, you have to convert the data coming from the network interfaces from big-endian to little endian to work with it as network interfaces normally use big-endian format.
+ *PS:* We can store small strings (string len $\le$ 8) straight to a memory location using registers.
+ ![[Pasted image 20260116112601.png]]
+ As we can see, we wrote "/flag" first straight to `rax` but we did so in reverse mode and then that value  to memory. As it will be written in little-endian mode, it will be reversed from the big-endian value in register and it will be written as "/flag" which we can then pass to a `syscall` or use accordingly.
