@@ -9,3 +9,4 @@
 | 49   | [[Instructions#bind(int fd, struct sockaddr *addr, socklen_t addrlen)\|bind]]      | int fd       | struct sockaddr \*addr | socklen_t addrlen |     |     |     |
 | 50   | [[Instructions#listen(int fd, int backlog)\|listen]]                               | int fd       | int backlog            |                   |     |     |     |
 | 60   | [[Instructions#Syscall#exit(int ret_code)\|exit]]                                  | int ret_code |                        |                   |     |     |     |
+| 3    | [[Instructions#close(int fd)\|close]]                                              | int fd       |                        |                   |     |     |     |

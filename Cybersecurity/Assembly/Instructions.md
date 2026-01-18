@@ -84,6 +84,7 @@ mov rbx, [rax] # this moves data from the location pointed by rax
 - Data is stored as little endian when storing in memory. Hence **bytes are shuffled during multi-byte storage from registers to memory. Individual bits are not shuffled, only bytes during multi byte storage.** For this reason, **writes to the stack behave just like any other write to memory** since it's basically pushing into memory.
   *Note:* Little endian is basically storing the data as right to left, i.e., the storing of data starts from the last bit(LSB) and moves towards the first bit (MSB).
 - We can also do `rip`-relative addressing to access the memory next to code but generally its not writable.
+- **`mov` cannot move a `qword` directly to memory. We have to use an intermediate register.** 
 ##### Extending and shrinking data
 You can extend data from a smaller register to bigger register for bigger calculations using `mov`
 ```assembly
@@ -401,3 +402,11 @@ syscall
 - code => 43
 - Accepts the first incoming connection in the connection queue for the socket pointed to by the `fd`.
 - Returns a new FD for the connection.
+#### close(int fd)
+```assembly
+mov rdi, <fd>
+mov rax, 3
+syscall
+```
+- code => 3
+- Closes the file/socket/anything file-like pointed to by the file descriptor `fd`

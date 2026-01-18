@@ -15,6 +15,7 @@ Data is stored as little endian when storing in memory. Hence **bytes are shuffl
 
 *Note:* Although we are using the terms **top** and **base**, the base actually means the first stack address or the topmost address in this case while top here is the bottom-most address of the stack.
 ***NOTE:*** Never EVER write to `rsp` in a function just after calling. It contains the return address to the caller function.
+***NOTE 2:*** ==Writing data always goes in the direction from lower addresses to higher addresses in memory.==
 ***
 ## Instructions
 ---

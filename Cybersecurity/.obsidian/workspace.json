@@ -113,7 +113,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "qword",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
