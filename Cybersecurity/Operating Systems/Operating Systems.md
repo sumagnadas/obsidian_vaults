@@ -19,3 +19,7 @@ This is good for creating complex data flows between commands.
 In Linux, all the process are stored as a blob of data in `/proc` in a certain format which contains the real, effective and saved UID (difference?)\[Permission Model\], it's own PID, the file descriptors open for that process and the memory mappings of the program, like where the libraries and the program are loaded.
 General structure:-
 ![[Pasted image 20260116111207.png]]
+### Forking
+- Forking is basically when a process (parent process) spawns another process  (child process) with the same stack frame and all.
+- Mostly everything is same for the child and parent process when they fork $-$ (virtual) memory mapping, File descriptor connection, Real UID, Effective UID, SUID
+- The only thing that is different is the PID and PPID (parent PID). Apart from that, although initially the stuff mentioned above is same, they are not linked to each other i.e. if you close an FD in one of them, the other would still have the same FD connected to it wherever it was connected. Basically they become their own being, even if initially at some point they were similar.

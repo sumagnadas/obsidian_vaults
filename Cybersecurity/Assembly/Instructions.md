@@ -304,7 +304,10 @@ FUNC_CHECK_LEET:
 Functions can be written in assembly code using `call` and `ret`. The functions are basically labels which you can `call` and then `ret` returns to the address from where it was called.
 Now functions uses a convention for getting its arguments. This is different from architecture to architecture.
 Linux amd64, the architecture we are using passes its arguments in `rdi`, `rsi`, `rdx`, `rcx`, `r8`, `r9` and gets its return value in `rax`.
-Now value of some registers are saved by the functions (on a stack different from `rsp`) when called and, even after using those registers for calculations, when the function returns, it restores the original values of these registers. `rsp` is also "saved" by the function, obviously. The other registers have no such protection and you will have to save the values on your own to get them back when the function returns.
+***Note:*** (Callee and Caller saved registers) 
+	Now value of some registers are saved by the functions (on a stack different from `rsp`) when called and, even after using those registers for calculations, when the function returns, it restores the original values of these registers. `rsp` is also "saved" by the function, obviously. The other registers have no such protection and you will have to save the values on your own to get them back when the function returns.
+	\[Call-preserved = callee-saved & Call-clobbered = caller-saved]
+	![[Pasted image 20260411171543.png]]
 ### Syscalls
 Syscalls are how programs interact with CPU. Syscall basically calls a system function that serves a specified purpose. For that purpose, the following registers are used to provide info to `syscall`
 - `rax` -> provides the `syscall` function via a number which maps to a specific function.
@@ -324,7 +327,7 @@ syscall
 - Returns the number of bytes read from `fd`
 #### write(int fd, char \*buf, size_t count)
 ```assembly
-mov rdi, 1 # stdin file desc
+mov rdi, 1 # stdout file desc
 mov rsi, rsp # write data from the stack (rsp is the stack pointer location)
 mov rdx, rax # number of bytes to write
 mov rax, 1
@@ -333,7 +336,7 @@ syscall
 - code => 1
 - Output `count` bytes  from memory location `buf` to `fd`.
 - Returns the number of bytes outputted to `fd`.
-#### open(char \*path, int flags)
+#### open(char \*path, int flags, umode_t mode)
 ```assembly
 mov rdi, rsp # get filename from the stack
 mov rsi, 0 # read-only flag
@@ -343,6 +346,7 @@ syscall
 - code => 2
 - Read file `pathname` wrt to `flags`
 - Returns the new file descriptor
+- `mode` required for creating the file, if needed.
 #### socket(int domain, int type, int protocol)
 ```assembly
 mov rdi, 2 # 2 for AF_INET
@@ -410,3 +414,8 @@ syscall
 ```
 - code => 3
 - Closes the file/socket/anything file-like pointed to by the file descriptor `fd`
+#### fork()
+- code  => 57
+- Forks the process into a child process from the same stack frame i.e. same position in the code
+- The `fork` syscall returns in both the child and parent process. In the parent process, it returns with the PID of the child process while in the child process, it returns with 0, helping in detecting the child process from the parent.
+- For more info, check out [[Operating Systems#Processes|Processes]]
