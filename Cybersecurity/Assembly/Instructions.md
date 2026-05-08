@@ -370,12 +370,12 @@ syscall
 - code => 49
 - Binds the socket defined by the `fd` to an actual connection defined as per the  `sockaddr` object whose length is `addrlen`
 - The `sockaddr` has a general form of 
-  ```c
-	struct sockaddr{
-		uint16_t sa_family;
-		uint8_t sa_data[14]
-	}
-	```
+```c
+struct sockaddr{
+	uint16_t sa_family;
+	uint8_t sa_data[14]
+}
+```
   This struct passes the data for the socket to `bind` to an actual network interface. For `sa_family=AF_INET` i.e.  IPv4, the struct is packed in the form of
   ```c
   struct sockaddr_in{
