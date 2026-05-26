@@ -44,3 +44,9 @@ As we send the output to another file, we can also use a named pipe/fake file in
 ### strace
 - Usage -> `strace /path/to/program_executable`
 - Used to trace system calls when a program is executed
+### curl
+- used to make a HTTP request to an IP/server mentioned
+- `-H` -> Used to specify headers
+### nc
+- used to make a persistent TCP/UDP connection with a host
+- the connection can then be used to make raw HTTP request.
