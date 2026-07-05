@@ -23,3 +23,8 @@ General structure:-
 - Forking is basically when a process (parent process) spawns another process  (child process) with the same stack frame and all.
 - Mostly everything is same for the child and parent process when they fork $-$ (virtual) memory mapping, File descriptor connection, Real UID, Effective UID, SUID
 - The only thing that is different is the PID and PPID (parent PID). Apart from that, although initially the stuff mentioned above is same, they are not linked to each other i.e. if you close an FD in one of them, the other would still have the same FD connected to it wherever it was connected. Basically they become their own being, even if initially at some point they were similar.
+## Stack
+---
+The stack is the general location for storing scratch data, like local variables for a process and its functions. It also. It generally grows downwards/in the negative direction, with `push` subtracting `rsp` while `pop` adds to it.
+***Note***: The stack is not unlimited for a process and going over the size results in a stack overflow.
+All functions allocate their own frame in a stack by subtracting `rsp` by how much bytes they need to allocate and then address the memory locations

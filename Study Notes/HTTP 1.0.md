@@ -44,4 +44,5 @@ First line => Status-Line = **HTTP-Version** SP **Status-Code** SP **Reason-Phra
 	- **503**: Service Unavailable
 *Note*: SP = space 
 
-HTTP URL SCHEME
+## Body
+- ***Form data format***: URL encoded => Example: `name=Sumagna%20Das&age=15`
