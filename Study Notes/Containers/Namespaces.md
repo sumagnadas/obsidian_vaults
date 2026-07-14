@@ -1,4 +1,4 @@
-hNamespace are one of the main building blocks of a container and they control the system view in many different ways
+Namespaces are one of the main building blocks of a container and they control the system view in many different ways
 ## PID
 ---
 - This type of namespace is used to isolate the view of processes running in a system. 

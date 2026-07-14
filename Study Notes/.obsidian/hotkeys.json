@@ -57,14 +57,6 @@
       "modifiers": [
         "Alt"
       ],
-      "key": "ArrowUp"
-    }
-  ],
-  "editor:swap-line-up": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
       "key": "ArrowDown"
     }
   ],
@@ -183,6 +175,14 @@
         "Alt"
       ],
       "key": "6"
+    }
+  ],
+  "editor:swap-line-up": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowUp"
     }
   ]
 }

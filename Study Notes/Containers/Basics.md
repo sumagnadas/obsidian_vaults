@@ -11,7 +11,7 @@ Cgroups are a system primitive/component which helps in fine-grained control of 
 - Network (net)
 - Block I/O (blkio)
 - Freeze
-These cgroups can be used to limit the resources a group of processes can use. Initially all the processes belong to the root cgroup which has no limits or anything set.
+These cgroups can be used to limit the resources a group of processes can use. Initially all the processes belong to the root cgroup which has no limits or anything set. For more info, [[CGroups]]
 ## Namespaces
 ---
 Namespaces are a system primitive/component to limit the system view of a process. It can only see the system items defined by the rules of its namespaces, which are divided as follows :-
