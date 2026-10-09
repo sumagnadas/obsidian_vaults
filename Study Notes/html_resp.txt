@@ -1,0 +1,36 @@
+Process of accessing website/getting stuff on internet
+Request website -> check cache for IP address -> recursive DNS searches for authoritative DNS(if no cache)->Authoritative DNS gives web server-> web server firewall checks if this is an attack-> load balancer to send it to certain server accordingly -> connect to webserver and process request -> show website
+
+Request is made to a webserver to get some document, update/create new data in it,etc.
+Types of HTTP methods ->
+- GET    -> used to get information from webserver (<GET / HTTP/1.1>)
+- POST   -> used to submit data to webserver potentially creating new records (like for forms you can post the data and it will process it accordingly
+	    whether its showing calculations or creating a new account)
+- PUT    -> used to update information in a webserver
+- DELETE -> used to delete information from webserver
+Headers -> additional bits of data sent in the request to view website properly/in the response to understand what we received in detail
+Types of headers -> https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers (for more details)
+
+
+Response is send back according to the request sent which contains information regarding the request
+Types of HTTP response/status codes -> (present in first line in the format <HTTP/1.1 200 ok>)
+- 100-199 -> (not very common) tells client/user to send rest of request
+- 200-299 -> request has been successful
+	- 200 -> Successful
+	- 201 -> Created -> resource has been created
+- 300-399 -> the request is being redirected to some other document or resource
+	- 301 -> Moved Permanently -> the resource you're searching for has a new location now permanently
+	- 302 -> Found -> after redirection, it has been found at some location which is not permanent and can change in the future
+- 400-499 -> client request is erroneous or there was some problem in processing the particular request sent
+	- 400 -> Bad Request -> request is formed incorrectly or doesn't have enough information to process it
+	- 401 -> Not authorized -> the one making the request is not allowed to access the resource (maybe in the specified way)
+				   and requires some kind of authentication to proceed
+	- 403 -> Forbidden -> can't access this resource whether you are logged in or not
+	- 404 -> Page Not Found -> page/resource not found or doesn't exist
+	- 405 -> Method not allowed -> eg: trying to GET in a /create-account which only allows POST method
+- 500-599 -> server side problem in processing the request
+	- 500 -> Internal Service Error -> the server cant handle your request as it has encountered some error with it and process it properly
+					   (application runs properly but can't process the request for some reason)
+	- 503 -> Service Unavailable -> server down or overloaded (application has completely stopped for some reason)
+	
+
