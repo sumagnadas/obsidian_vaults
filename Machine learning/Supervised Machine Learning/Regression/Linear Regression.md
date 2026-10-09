@@ -1,7 +1,13 @@
+# Simple Linear Regression
+---
 Basically an algorithm to find a $m$ and $b$ for a  $y = mx+b$ line which has minimum error/difference from the data points in a sort of linear data i.e. find the best fit line that passes closest to the data points.
 
 Here $m$ can be taken as weightage of the variable i.e. how much the package depends on the cgpa of an individual. $b$ is also called the offset telling what happens if the input turns to 0.
-
+This is also represented as  
+$$
+h_{\theta}(x) = \theta_0+\sum_{i=1}^n\theta_ix_i
+$$
+where $x_i$ are features/values of individual columns.
 ## Coding Aspect so far
 ---
 `sklearn`:-
@@ -60,4 +66,38 @@ Hence, we might use it as $b_{new} = b_{old} -\eta *slope$  where $\eta$ is the 
 
 Now if we want to generalize this whole thing for a loss function of $n$ variables $L(a_1,a_2,...,a_n)$ we can apply the same $b_{new}$ formula we used earlier except this time,for the slope part we do partial differentiation w.r.t the variable we are updating and use that formula i.e. basically the equation becomes 
 $\begin{bmatrix}a_1 \\ a_2\\ ... \\ a_n \end{bmatrix}_{new} = \begin{bmatrix}a_1 \\ a_2\\ ... \\ a_n \end{bmatrix}_{curr}  - \eta\begin{bmatrix}\frac{\partial L}{\partial a_1} \\ \frac{\partial L}{\partial a_2}\\ ... \\ \frac{\partial L}{\partial a_n} \end{bmatrix}_{old}$   
-where the 2nd gradient vector is with respect to the current coordinates.
+where the 2nd gradient vector is with respect to the current coordinates. 
+
+---
+# Other types of Linear Regression
+---
+A model should not be overfitting with the training data. Getting Cost (MSE) = 0 is always an overfitting case and we really can't assume that all the data we have got, like measurements or anything, doesn't have any noise or erroneous data in it. If we minimize this function, we can reach zero which is problematic and the following models are an improvement for that.
+## Ridge Regression ($L_2$ Regularization)
+---
+To penalize fitting all the points to the line, we add a value $\lambda{m}^2$ where $m$ is the slope/gradient and $\lambda$ is a constant. This moves the line in between the data points instead of just on it, such that it has minimal distance from the points as well as generalizes that line for them.
+The cost function becomes
+$$L = \sum_{i=1}^n(h_\theta(x_i) - y_i)^2+\lambda{m}^2$$
+The new weight function after gradient descent becomes 
+$$a_{new} = a_{old} - 2\eta\lambda({a_{old}})+... = a_{old}(1-2\eta\lambda) + ...$$
+Here, the weights get closer and closer to zero but never zero as it always gets multiplied to a small number instead of straight subtraction.
+## Lasso Regression ($L_1$ Regularization)
+---
+Instead of $\lambda{m}^2$, the penalty added is $\lambda|{m}|$. This helps in feature selection, by reducing weights of features/variables that are not so correlated to 0. 
+The cost function becomes
+$$L = \sum_{i=1}^n(h_\theta(x_i) - y_i)^2+\lambda|{m}|$$
+Basically, the new weight function becomes
+$$a_{new} = a_{old} - \eta\lambda({sign(a_{old})})$$
+As the weights are subtracted by some constant number, it can get to zero or even go beyond it. This causes the value to jump between positive and negative values for the weight, which can cause the value to never reach true minimum for that function which is 0. Hence it is clamped at 0 by using $max( a_{old} - \eta\lambda({sign(a_{old})}), 0)$ which helps in automatic feature selection.
+## Elastic Net Regression
+---
+Combine $L_1$ and $L_2$ penalty together and you get Elastic Net Regression which avoids overfitting and does feature selection simultaneously. The cost function becomes
+$$L = \sum_{i=1}^n(h_\theta(x_i) - y_i)^2+\lambda_1|{m}|+\lambda_2{m}^2$$
+where $\lambda_1$ and $\lambda_2$ are parameters to control the strength of penalty.
+## Polynomial Regression
+---
+Uses a polynomial degree multi-variable equation instead of a single degree one. This is still linear regression because the predicted function $\hat{y}$ is a linear function of the weights. Useful for nonlinear relationship between variables.
+**Notes**:
+- Too much degree and it overfits to the data.
+- Too little degree and it underfits to the data.
+- Degree should never be close to the number of data points or else it WILL overfit, as there are too many bends which will giddy up to the points.
+- Its not much useful in case of linear relationship so don't use it there.

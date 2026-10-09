@@ -1,12 +1,4 @@
 {
-"app:delete-file": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "Delete"
-    }
-  ],
   "file-explorer:new-file-in-new-pane": [],
   "file-explorer:new-folder": [
     {
@@ -65,14 +57,6 @@
       "modifiers": [
         "Alt"
       ],
-      "key": "ArrowUp"
-    }
-  ],
-  "editor:swap-line-up": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
       "key": "ArrowDown"
     }
   ],
@@ -106,6 +90,13 @@
   "window:zoom-in": [
     {
       "modifiers": [
+        "Mod"
+      ],
+      "key": "="
+    },
+    {
+      "modifiers": [
+        "Alt",
         "Mod"
       ],
       "key": "="
@@ -143,6 +134,71 @@
         "Shift"
       ],
       "key": "4"
+    }
+  ],
+  "editor:set-heading-1": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "1"
+    }
+  ],
+  "editor:set-heading-2": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "2"
+    }
+  ],
+  "editor:set-heading-3": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "3"
+    }
+  ],
+  "editor:set-heading-4": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "4"
+    }
+  ],
+  "editor:set-heading-5": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "5"
+    }
+  ],
+  "editor:set-heading-6": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "6"
+    }
+  ],
+  "editor:swap-line-up": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowUp"
+    }
+  ],
+  "window:zoom-out": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "-"
     }
   ]
 }
